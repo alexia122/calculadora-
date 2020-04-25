@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calculadora html</title>
+
+<style type="text/css">
+
+#button {
+    height: 40px;
+    width: 50px;
+}
+
+#respuesta {
+    height: 40px;
+    width: 215px;
+    font-size: 20px;
+
+}
+
+</style>
+
+
+</head>
+<body>
+<form name="Calculadora HTML">
+    <table border="1" width= "100" align="center">
+    
+     <tr>
+     <td colspan="4"><input type="text" name="respuesta" id="respuesta"></td>
+     </tr>
+
+     <tr>
+        <td><input type="button" value="7" onclick="respuesta.value+='7'" id="button"></td>
+        <td><input type="button" value="8" onclick="respuesta.value+='8'"id="button"></td>
+        <td><input type="button" value="9" onclick="respuesta.value+='9'"id="button"></td>
+        <td><input type="button" value="+" onclick="respuesta.value+='+'"id="button"></td>
+     </tr>
+
+     <tr>
+        <td><input type="button" value="4" onclick="respuesta.value+='4'"id="button"></td>
+        <td><input type="button" value="5" onclick="respuesta.value+='5'"id="button"></td>
+        <td><input type="button" value="6" onclick="respuesta.value+='6'"id="button"></td>
+        <td><input type="button" value="-" onclick="respuesta.value+='-'"id="button"></td>
+     </tr>
+
+     <tr>
+        <td><input type="button" value="1" onclick="respuesta.value+='1'"id="button"></td>
+        <td><input type="button" value="2" onclick="respuesta.value+='2'"id="button"></td>
+        <td><input type="button" value="3" onclick="respuesta.value+='3'"id="button"></td>
+        <td><input type="button" value="x" onclick="respuesta.value+='*'"id="button"></td>
+     </tr>
+
+     <tr>
+        <td><input type="button" value="c" onclick="respuesta.value= ''"id="button"></td>
+        <td><input type="button" value="0" onclick="respuesta.value+='0'"id="button"></td>
+        <td><input type="button" value="=" onclick="respuesta.value=eval(respuesta.value)"id="button"></td>
+        <td><input type="button" value="/" onclick="respuesta.value+='/'"id="button"></td>
+     </tr>
+
+    </table>
+    ></form>
+</body>
+</html>
